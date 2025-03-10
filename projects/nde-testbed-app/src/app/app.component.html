@@ -1,0 +1,11 @@
+<h1 class="text-3xl font-bold underline">
+    Hello world!
+</h1>
+<p>hola de nuevo</p>
+<lib-nde-side-menu
+    [titleName]="titleName()"
+    [titleColor]="titleColor.red"
+    [isAuthenticated]="isAuthenticated()"
+    (onSignIn)="isAuthenticated.set(true)"
+    (onSignOut)="isAuthenticated.set(false)"
+/>

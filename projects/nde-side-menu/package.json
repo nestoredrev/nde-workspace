@@ -1,0 +1,24 @@
+{
+  "name": "nde-side-menu",
+  "version": "0.0.5",
+  "repository": {
+    "type": "git",
+    "url": "https://nestoredrev.github.io/"
+  },
+  "keywords": [
+    "Nestor Edrev",
+    "NDE side-menu",
+    "don't-use"
+  ],
+  "license":"MIT",
+  "author": "Nestor Edrev",
+  "homepage": "https://nestoredrev.github.io/",
+  "peerDependencies": {
+    "@angular/common": "^18.2.0",
+    "@angular/core": "^18.2.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
+}

@@ -11,6 +11,11 @@
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
     "isolatedModules": true,
+    "paths": {
+      "nde-side-menu": [
+        "./dist/nde-side-menu"
+      ]
+    },
     "esModuleInterop": true,
     "sourceMap": true,
     "declaration": false,

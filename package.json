@@ -3,10 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "ng serve nde-testbed-app -o",
+    "build:dev": "ng build nde-side-menu --watch --configuration development",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "nde-side-menu:build": "ng build nde-side-menu",
+    "nde-side-menu:test": "ng test nde-side-menu --no-watch --no-progress --browsers=ChromeHeadless",
+    "nde-side-menu:publish": "npm run nde-side-menu:test && npm run nde-side-menu:build && npm publish dist/nde-side-menu/"
   },
   "private": true,
   "dependencies": {
@@ -18,11 +21,15 @@
     "@angular/platform-browser": "^18.2.0",
     "@angular/platform-browser-dynamic": "^18.2.0",
     "@angular/router": "^18.2.0",
+    "@tailwindcss/postcss": "^4.0.12",
+    "postcss": "^8.5.3",
     "rxjs": "~7.8.0",
+    "tailwindcss": "^4.0.12",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.10"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "^18.2.14",
     "@angular/cli": "^18.2.10",
     "@angular/compiler-cli": "^18.2.0",
     "@types/jasmine": "~5.1.0",
@@ -32,6 +39,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "ng-packagr": "^18.2.0",
     "typescript": "~5.5.2"
   }
 }
