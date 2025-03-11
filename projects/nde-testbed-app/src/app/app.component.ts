@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { NdeSideMenuComponent, TitleColor } from 'nde-side-menu';
+import { NdeSideMenuComponent, TitleColor, menuItem } from 'nde-side-menu';
 
 
 
@@ -12,7 +12,15 @@ import { NdeSideMenuComponent, TitleColor } from 'nde-side-menu';
 })
 export class AppComponent {
   title = 'nde-testbed-app';
-  public titleName = signal<string>('NDE');
+
+
+  public menuItems:menuItem[] = [
+    { path: '/', itemName: 'Dashboard', icon: 'fa-house'},
+    { path: '/proyects', itemName: 'Proyects', icon: 'fa-table'},
+    { path: '/profile', itemName: 'Profile', icon: 'fa-user'},
+    { path: '/notifications', itemName: 'Notifications', icon: 'fa-bell'}
+  ];
+
   public titleColor = TitleColor;
   public isAuthenticated = signal<boolean>(true);
 }

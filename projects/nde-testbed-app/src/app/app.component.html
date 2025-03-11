@@ -3,7 +3,9 @@
 </h1>
 <p>hola de nuevo</p>
 <lib-nde-side-menu
-    [titleName]="titleName()"
+    [menuItems]="menuItems"
+    titleName="NDE 2.0"
+    subTitleName="SA"
     [titleColor]="titleColor.red"
     [isAuthenticated]="isAuthenticated()"
     (onSignIn)="isAuthenticated.set(true)"

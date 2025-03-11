@@ -1,9 +1,12 @@
 {
   "name": "nde-side-menu",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "repository": {
     "type": "git",
-    "url": "https://nestoredrev.github.io/"
+    "url": "https://github.com/nestoredrev/nde-workspace"
+  },
+  "bugs": {
+    "url": "https://github.com/nestoredrev/nde-workspace/issues"
   },
   "keywords": [
     "Nestor Edrev",
